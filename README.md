@@ -1,5 +1,5 @@
 # Atlatszo-Hotel-Management-System
-## Prerequisites Software
+## Prerequisite Software
 •	WampServer
 
 ## Steps to follow
