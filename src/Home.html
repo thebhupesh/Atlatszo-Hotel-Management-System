@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<title>ATLATSZO</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<body>
+		<div class="w3-top">
+			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+				<a href="#home" class="w3-bar-item w3-button"><b>ATLATSZO</b> HOTEL MANAGEMENT SYSTEM</a>
+				<div class="w3-right w3-hide-small">
+					<a href="#login" class="w3-bar-item w3-button" onclick="document.getElementById('login').style.display='block'">Login</a>
+					<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+			<div id="login" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+					</div>
+					<form class="w3-container" action="login.php" method="post">
+						<div class="w3-section">
+							<label><b>Username</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="Username" required>
+							<label><b>Password</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password" name="Password" required id="pwd">
+							<input type="checkbox" onclick="password()"> Show Password
+							<div class="w3-right-align"><a href="#pwdreset" onclick="document.getElementById('pwdreset').style.display='block'">Forgot password?</a></div>
+							<button class="w3-button w3-block w3-black w3-section w3-padding" type="sign_in">Login</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+			<div id="pwdreset" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('pwdreset').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+					</div>
+					<form class="w3-container" action="pwdreset.php" method="post">
+						<div class="w3-section">
+							<label><b>Username</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="username" required>
+							<label><b>Name</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name" name="name" required>
+							<label><b>Contact Number</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Number" name="number" required>
+							<label><b>Room No.(For Guest)</b></label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Room No." name="room">
+							<button class="w3-button w3-block w3-black w3-section w3-padding" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function password() {
+				var x=document.getElementById("pwd");
+				if(x.type==="password") {
+					x.type="text";
+				}
+				else {
+					x.type="password";
+				}
+			}
+		</script>
+		<header class="w3-display-container w3-content w3-wide" style="max-width:1500px" id="home">
+			<img class="w3-image" src="home_bg.jpg" alt="logo" width="1500" height="800">
+		</header>
+		<br><br><div class="w3-content w3-padding" style="max-width:1564px">
+			<div class="w3-container w3-padding-32">
+				<div class="w3-row-padding w3-grayscale">
+					<div class="w3-col l3 m6 w3-margin-bottom">
+						<img src="quote.jpg" alt="quote" style="width:100%">
+					</div>
+					<div class="w3-center">
+						<p style="font-size:25px;">
+							The key is to set realistic customer expectations
+							<br>and then not to just meet them,
+							<br>but to exceed them — preferably in unexpected and helpful ways.
+						</p>
+						<div class="w3-display-container w3-content w3-wide w3-center" style="max-width:1500px">
+							<br><img class="w3-image" src="features.png" alt="features" width="1000" height="800">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-container w3-padding-32" id="contact">
+				<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Contact</b></h3>
+				<p>Let's get in touch and talk.</p>
+				<form action="contact.php" method="post">
+					<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+					<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+					<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+					<textarea class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment" rows=5></textarea>
+					<button class="w3-button w3-black w3-section" type="submit">
+					<i class="fa fa-paper-plane"></i> SEND MESSAGE
+					</button>
+				</form>
+			</div>
+		</div>
+		<footer class="w3-center w3-black w3-padding-16">
+			<p>Powered by Atlatszo.Inc</p>
+		</footer>
+	</body>
+</html>
