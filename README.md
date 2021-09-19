@@ -26,4 +26,18 @@ username: guest
 <br>password: guest
 
 ## Screenshots
-![admin](/screenshots/admin1.jpg)
+
+### Home
+![home1](/screenshots/home1.jpg)
+### Login
+![login](/screenshots/login.jpg)
+### Admin/Employee
+![admin1](/screenshots/admin1.jpg)
+![admin2](/screenshots/admin2.jpg)
+![admin3](/screenshots/admin3.jpg)
+![admin6](/screenshots/admin6.jpg)
+![admin7](/screenshots/admin7.jpg)
+### Guest
+![guest1](/screenshots/guest1.jpg)
+![guest2](/screenshots/guest2.jpg)
+![guest3](/screenshots/guest3.jpg)
