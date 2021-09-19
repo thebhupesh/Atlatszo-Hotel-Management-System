@@ -1,4 +1,6 @@
 # Atlatszo-Hotel-Management-System
+This project's objective was to provide a hotel staff and guest management platform. The system gives features for guest management like check-in, self check-out, bill generation, add-on services etc. The main and unique feature of the project was the performance report generation of employees and departments based on the reviews.
+
 ## Prerequisite Software
 •	WampServer
 
