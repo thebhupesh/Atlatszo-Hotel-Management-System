@@ -24,3 +24,6 @@ username: emp
 ### Guest:
 username: guest
 <br>password: guest
+
+## Screenshots
+![admin](/screenshots/admin1.jpg)
